@@ -56,10 +56,16 @@ The private key for each coin type was added to unique variable names for the ac
  
 A test transaction was then sent with the required inputs:
  
-**Bitcoin transaction**
-send_tx(BTCTEST, btc_account, "mwqBUL2DpLM3SqWsNxanUwqv7jQxybN8mp", 0.00001)
+**Bitcoin Transaction**
+*send_tx(BTCTEST, btc_account, "mwqBUL2DpLM3SqWsNxanUwqv7jQxybN8mp", 0.00001)*
 The addressed used for this transaction was obtained using the Bip39 mnemonic code converter
 
+Below is an image of the successful test as shown on [blockchain explorer](https://www.blockchain.com/btc-testnet/address/mwqBUL2DpLM3SqWsNxanUwqv7jQxybN8mp)
+![](https://github.com/alexgwise/blockchain_with_python/blob/main/Images/Confirmed%20Bitcoin%20transaction.PNG)
 
-
+**Ethereum Transaction**
+send_tx(ETH, eth_account, "0x9c87c013941904Db6ec3af17cfe16dBe4d8fEeFc", 1)
+This transaction successfully created and is shown in Ganache from one of the addresses associated with my private key, to another address. 
+![](https://github.com/alexgwise/blockchain_with_python/blob/main/Images/successful%20ETH%20transaction.PNG)
  
+I hope this code has been useful for you. This activity certainly helped strengthen my comfort level with functions and increased my knowledge of cryptocurrencies.
